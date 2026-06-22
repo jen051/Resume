@@ -1,0 +1,247 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titlespacing*{\section}{0pt}{15pt}{10pt} % margins
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSpecialSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small #2 \\
+      \textit{\small#3} & \small #4 \\
+      \textit{\small#5} & \small #6 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Jennifer Jiang} \\ \vspace{2pt}
+    \small (404) 216-0986 $|$ \href{mailto:yjiang607@gatech.edu}{\underline{yjiang607@gatech.edu}} $|$ 
+    \href{https://www.linkedin.com/in/jenjiang5/}{\underline{linkedin.com/in/jenjiang5}} $|$
+    \href{https://github.com/jen051}{\underline{github.com/jen051}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSpecialSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {B.S. Computer Science, Specialization in Intelligence/Info-internetworks}{Dec.2026, 4.0 GPA}
+      {M.S. Computer Science, Specialization in Artificial Intelligence}{Dec.2027}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Head Teaching Assistant}{Aug. 2024 -- Present}
+      {College of Computing, Georgia Institute of Technology}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Led a team of 30+ TAs supporting 600+ students in Discrete Mathematics and Honors Discrete Mathematics.}
+        \resumeItem{Coordinated grading and feedback processes to ensure consistent evaluation across assignments and exams.}
+        \resumeItem{Partnered with professors to refine curriculum and streamline assessment workflows.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {AI Intern}{Jun. 2025 - Jul. 2025}
+      {NeuralSeek}{Remote}
+      \resumeItemListStart
+        \resumeItem{Gained practical exposure to designing and deploying generative AI agents using NeuralSeek’s enterprise platform.}
+        \resumeItem{Learned and applied prompt engineering techniques, knowledge base integration, and workflow automation.}
+        \resumeItem{Analyzed AI-driven use cases for real-world enterprise scenarios in customer support and process automation.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Jan. 2024 -- May 2024}
+      {EPIC Lab, Georgia Institute of Technology}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Created Python and MATLAB toolboxes to streamline data processing for research experiments.}
+        \resumeItem{Collected and analyzed motion capture data to support graduate-led studies in human movement.}
+        \resumeItem{Synthesized findings from scientific literature, presenting weekly insights to guide experiment design.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{Jul. 2022 -- Aug. 2022}
+      {University of Alberta}{Edmonton, AB, Canada}
+      \resumeItemListStart
+        \resumeItem{Investigated applications of Natural Language Processing (NLP) in education under Professor Paul Lu.}
+        \resumeItem{Built a Python script with Gensim Word2Vec to process and analyze text corpora to create word embeddings.}
+        \resumeItem{Developed an educational web game inspired by NYT's \emph{Wordle} using NLP and word embeddings.}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Programming Team Lead}{Sept. 2020 -- Jun. 2023}
+    %   {FIRST Robotics Team 4627}{Calgary, AB, Canada}
+    %   \resumeItemListStart
+    %     \resumeItem{Programming lead of a team of $\sim$40 students, responsible for project management and guiding new members}
+    %     \resumeItem{Worked with Time-of-Flight sensors and REV encoders, created PID loops that controlled the main functionalities of the robot during the 2023 season}
+    %     \resumeItem{Developed a robot vision system using OpenMV, MicroPython, and JSON pipelines during the 2022 season}
+    %     \resumeItem{Led the team to semifinals in the 2023 Canadian Pacific Regional and Las Vegas Regional}
+    %   \resumeItemListEnd
+    % \resumeSubheading
+    %   {Co-Founder, VP Administration}{Apr. 2021 -- Jun. 2022}
+    %   {Calgary Youth Programming Club}{Calgary, AB, Canada}
+    %   \resumeItemListStart
+    %     \resumeItem{Organized a virtual hackathon in Nov. 2021 with over 200 participants}
+    %     \resumeItem{Acted as the primary point of contact for sponsors, club executives, and club members}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+      {\textbf{Fight and Furious}}{}
+      {HackGT 11 - 2nd Best Overall Project}{Python, numpy, MediaPipe, OpenCV, React, FastAPI, Streamlit, Git}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack React web app that teaches self-defense by providing real-time motion accuracy feedback.}
+            \resumeItem{Built backend pose analysis using MediaPipe and OpenCV to compare user movements with instructor samples.}
+            \resumeItem{Integrated live video analysis with FastAPI and Streamlit, enabling responsive feedback.}
+          \resumeItemListEnd
+        
+      \resumeSubheading
+      {\textbf{Logical Circuit Generative Model}}{}
+      {Hacklytics 2024 - Intel Developer Cloud Track Winner}{Python, Jupyter Notebook, GAN, CSS, Git}
+          \resumeItemListStart
+            \resumeItem{Built a GAN deep learning model to generate functional digital logic circuits from a dataset of 50,000+ samples.}
+            \resumeItem{Designed and optimized training loops, reducing convergence time by $90\%$ while maintaining circuit validity.}
+            \resumeItem{Demonstrated results at Hacklytics, earning top prize among 200+ completed projects and 1100+ participants.}
+          \resumeItemListEnd
+          
+    \resumeSubheading
+      {\textbf{Quantum - 2 Player Co-op Platformer Game}}{}
+      {VGDev, Georgia Institute of Technology}{Unity, C#, }
+          \resumeItemListStart
+            \resumeItem{}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills and Other}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, React, Node.js, English (native), Mandarin (native)} \\
+     \textbf{Relevant Knowledge}{: SQL, Git, Tensorflow, Pandas, Pytorch, Numpy, OpenCV, NLP, GAN, Agile, Android Studio, FastAPI, Streamlit, Unity, Intel Developer Cloud, PID Control, Docker, Machine Learning} \\
+     \textbf{Relevant Coursework}{: Object Oriented Programming, Data Structures and Algorithms, Systems and Networks, Intro to AI, Objects and Design, Design and Analysis Algorithms, Linear Algebra, Database Systems, Computer Networking}}}\\
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

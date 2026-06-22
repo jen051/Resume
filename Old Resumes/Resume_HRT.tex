@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jennifer Jiang} \\ \vspace{1pt}
+    \small (404) 216-0986 $|$ \href{mailto:x@x.com}{\underline{yjiang607@gatech.edu}} $|$ 
+    \href{https://www.linkedin.com/in/jenjiang5/}{\underline{linkedin.com/in/jenjiang5}} $|$
+    \href{https://github.com/jen051}{\underline{github.com/jen051}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Aug. 2023 -- May. 2026}
+      {Bachelor of Science in Computer Science}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Specialization Intelligence and System Architecture, 4.0 GPA.}
+        \resumeItem{\textbf{Relevant coursework}: Data Structure and Algorithms, Computer Organization and Programming, Objects and Design, Intro to Object-Oriented Programming, Linear Algebra, Intro to Discrete Mathematics, Intro to Multivariable Calculus, Intro Physics I, General Psychology.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Teaching Assistant}{Aug. 2024 -- Present}
+      {College of Computing, Georgia Institute of Technology}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Undergraduate TA for $\sim$800 students in Discrete Mathematics (CS2050)}
+        \resumeItem{Provided guidance in weekly lectures and office hours; graded and provided feedback on assignments and exams}
+        \resumeItem{Regularly proctored exam sections of $\sim$250 students}
+        \resumeItem{Collaborated with professors and $\sim$40 fellow TAs and assisted in curriculum design and assessment coordination}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Jan. 2024 -- May. 2024}
+      {EPIC Lab, Georgia Institute of Technology}{Atlanta, GA}
+      \resumeItemListStart
+        \resumeItem{Collaborated with fellow Undergraduate Research Assistants to create a set of toolbox code in Python and Matlab for experimental data processing and analysis}
+        \resumeItem{Directly assisted Graduate Team Leads in experiments, worked with motion capture to collect data to better understand the bio-mechanics of stroke patients}
+        \resumeItem{Analyzed and shared scientific journal articles with team members weekly}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Jul. 2022 -- Aug. 2022}
+      {University of Alberta}{Edmonton, AB, Canada}
+      \resumeItemListStart
+        \resumeItem{Explored ways to use Natural Language Processing in education with Professor Paul Lu}
+        \resumeItem{Developed an educational web game inspired by NYT's \emph{Wordle} using NLP and word embedding}
+        \resumeItem{Developed a Python script that uses the Gensim Word2Vec algorithm to process a corpus of text}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Programming Team Lead}{Sept. 2020 -- Jun. 2023}
+    %   {FIRST Robotics Team 4627}{Calgary, AB, Canada}
+    %   \resumeItemListStart
+    %     \resumeItem{Programming lead of a team of $\sim$40 students, responsible for project management and guiding new members}
+    %     \resumeItem{Worked with Time-of-Flight sensors and REV encoders, created PID loops that controlled the main functionalities of the robot during the 2023 season}
+    %     \resumeItem{Developed a robot vision system using OpenMV, MicroPython, and JSON pipelines during the 2022 season}
+    %     \resumeItem{Led the team to semifinals in the 2023 Canadian Pacific Regional and Las Vegas Regional}
+    %   \resumeItemListEnd
+    \resumeSubheading
+      {Co-Founder, VP Administration}{Apr. 2021 -- Jun. 2022}
+      {Calgary Youth Programming Club}{Calgary, AB, Canada}
+      \resumeItemListStart
+        \resumeItem{Organized a virtual hackathon in Nov. 2021 with over 200 participants}
+        \resumeItem{Acted as the primary point of contact for sponsors, club executives, and club members}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fight and Furious} $|$ \emph{Python, MediaPipe, OpenCV, React, FastAPI, Git}}{Sept. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web app that educates people about self defense techniques with React; HackGT11 Hackathon project}
+            \resumeItem{Created the backend Python script that computes user's accuracy using the MediaPipe pose estimation model}
+            \resumeItem{Assisted with relaying backend live video analysis to frontend webpage using FastAPI and the Streamlit library}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Logical Circuit Generative Model} $|$ \emph{Python, Jupyter Notebook, GAN, CSS, Git}}{Feb. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a Generative Adversarial Network deep learning model that generates viable digital logic circuits}
+            \resumeItem{Created the training loops for the model and analyzed a dataset of over 50,000 existing digital logic circuits}
+          \resumeItemListEnd
+              \resumeProjectHeading
+          {\textbf{Book Recommendation App} $|$ \emph{Java, Python, JSON, GSON, Java Embedded Python}}{Nov. 2022 -- Jun. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an all-in-one Java program that improves the book search process by gathering fragmented data}
+            \resumeItem{Created a python script that compares user data with existing datasets of book ratings to generate book recommendations}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, React, Node.js, MATLAB} \\
+     \textbf{Relevant Knowledge}{: Git, FastAPI, Pandas, Pytorch, Numpy, Unity, OpenCV, NLP, PID Control, GAN} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
