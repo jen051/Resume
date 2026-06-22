@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir public
           cp index.html public/
-          cp resume.pdf public/  # Move compiled PDF into the deployment folder
+          cp Resume.pdf public/  # Move compiled PDF into the deployment folder
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
