@@ -62,12 +62,12 @@
   }
 }
 
-\newcommand{\resumeSpecialSubheading}[6]{
+\newcommand{\resumeSpecialSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\small#1} & \small #2 \\
       \textit{\small#3} & \small #4 \\
-      \textit{\small#5} & \small #6 \\
+      % \textit{\small#5} & \small #6 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -128,7 +128,7 @@
     \resumeSpecialSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
       {B.S. Computer Science (Artificial Intelligence, Networking)}{4.0 GPA, Dec. 2026}
-      {M.S. Computer Science (Machine Learning)}{Expected Dec. 2027}
+      % {M.S. Computer Science (Machine Learning)}{Expected Dec. 2027}
   \resumeSubHeadingListEnd
 
 
@@ -137,15 +137,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
     {Software Engineering Intern}{May. 2026 -- Present}
-    {Cloud AI, Google LLC}{Sunnyvale, CA}
+    {Cloud AI Agents Engineering, Google LLC}{Sunnyvale, CA}
     \resumeItemListStart
-        \resumeItem{Re-engineered the video dubbing workflow by designing and prototyping an end-to-end agentic pipeline using Vertex GenAI and Python, replacing a rigid script-based system to improve flexibility and automation.}
-        \resumeItem{Developed specialized "Autorater" and "Director" agents to enable automated quality assessment and self-correcting loops, eliminating manual evaluation and  correction time and improving overall dubbing quality.}
+        \resumeItem{Architected an end-to-end agentic dubbing pipeline over 25+ pull requests that preserved timing, tone, and prosody to within $0.1$s of the source audio, by orchestrating stage-specific LLM agents in a non-linear, closed loop system bound by strict JSON contracts.}
+        \resumeItem{Built a Gemini-TTS speech synthesis agent, capable of recovering $84\%$ of failures and fitting audio to target timing, by implementing best-of-N selection with a Gemini judge, per-speaker voice cloning, retry-with-backoff, and atempo time stretching.}
+        \resumeItem{Designed a self-correcting eval loop, improving pacing accuracy by $11.2\%$ and reducing human-in-the-loop effort, by pairing a multimodel Gemini "autorater" agent with a prompt-based "director" agent that drives targeted fixes.}
+        % \resumeItem{Enabled natural language fine-tuning, creating a more flexible and portable alternative to the previous rigid cascaded production pipeline.}
+        \resumeItem{Created a demo video for the Cloud AI Agents Engineering all-teams meeting, presented internship achievements and takeaways to $10+$ engineers, and collaborated with teams such as GDM and YouTube, driving org-wide visibility and cross-team interest.}
         % \resumeItem{Implemented a 'best-of-n' per-segment speech synthesis method, enhancing the dubbed audio quality [add eval data from veronica maybe?]}
         % implemented voice cloning [wip], time matchin (lip sync) [wip]. 
         % something about prompt engineering (add this to first bullet maybe?)
         % presented/showcased agentic dubbing to third party clients (update this after july 15, hopefully it goes well lmfao)
-        \resumeItem{Built a Colab notebook for rapid experimentation and debugging of Gemini TTS prompts and parameters, streamlining quality iteration and issue resolution for developers.}
+        % \resumeItem{Built a Colab notebook for rapid experimentation and debugging of Gemini TTS prompts and parameters, streamlining quality iteration and issue resolution for developers.}
     \resumeItemListEnd
 
     \resumeSubheading
