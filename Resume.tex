@@ -109,11 +109,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\huge \scshape Jennifer Jiang} \\ \vspace{2pt}
     \small (404) 216-0986 $|$ \href{mailto:jenniferjiang0501@gmail.com}{\underline{jenniferjiang0501@gmail.com}} $|$ 
@@ -127,7 +122,7 @@
   \resumeSubHeadingListStart
     \resumeSpecialSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {B.S. Computer Science (Artificial Intelligence, Networking)}{4.0 GPA, Dec. 2026}
+      {B.S. Computer Science (Artificial Intelligence, Networking)}{4.0 GPA, Expected Dec. 2026}
       % {M.S. Computer Science (Machine Learning)}{Expected Dec. 2027}
   \resumeSubHeadingListEnd
 
@@ -139,11 +134,23 @@
     {Software Engineering Intern}{May. 2026 -- Aug. 2026}
     {Cloud AI Agents Engineering, Google LLC}{Sunnyvale, CA}
     \resumeItemListStart
-        \resumeItem{Architected an end-to-end agentic dubbing pipeline over 25+ pull requests that preserved timing, tone, and prosody to within $0.1$s of the source audio, by orchestrating stage-specific LLM agents in a non-linear, closed loop system bound by strict JSON contracts.}
-        \resumeItem{Built a Gemini-TTS speech synthesis agent, capable of recovering $84\%$ of failures and fitting audio to target timing, by implementing best-of-N selection with a Gemini judge, per-speaker voice cloning, retry-with-backoff, and atempo time stretching.}
-        \resumeItem{Designed a self-correcting eval loop, improving pacing accuracy by $11.2\%$ and reducing human-in-the-loop effort, by pairing a multimodel Gemini "autorater" agent with a prompt-based "director" agent that drives targeted fixes.}
+        \resumeItem{Architected an end-to-end agentic dubbing pipeline with dynamic voice options, prosody and tone preservation, and timing alignment, by orchestrating stage-specific LLM agents in a non-linear, closed-loop system bound by strict JSON contracts.}
+        \resumeItem{Hardened the pipeline against an unstable preview TTS model by classifying error types and designing a robust retry system, enabling full-length runs to complete unattended despite transient failures.}
+        \resumeItem{Aligned synthesized speech to within $0.1s$ of source duration via a pacing loop combining TTS prompt control, atempo time-stretching, and targeted re-synthesis.}
+        \resumeItem{Paired a multimodal Gemini ``autorater'' with a prompt-based ``director'' agent to enable natural-language fine-tuning and automatic upstream error recovery.}
+        \resumeItem{Created a demo video for the Cloud AI Agents Engineering all-teams meeting and collaborated with GDM and YouTube, driving visibility and cross-team interest.}
+       
+       %  \resumeItem{Architected an end-to-end agentic dubbing pipeline preserving source timing, tone, and prosody, by orchestrating stage-specific LLM agents in a closed-loop system bound by strict JSON contracts.}
+       %  \resumeItem{Hardened the pipeline against an unstable preview TTS model, allowing full-length runs to complete unattended despite transient failures, by classifying error types and designing a robust retry system.}
+       %  \resumeItem{Engineered time-alignment for synthesized speech, fitting each segment into its source time slot and producing dubs within $0.1s$ of source duration, by creating a pacing tuning loop with TTS prompt instructions, atempo time-stretching, and targeted re-synthesis.}
+       %  \resumeItem{Enabled natural language fine-tuning and upstream error recovery, by pairing a multimodal Gemini ``autorater'' with a prompt-based ``director'' agent that drives targeted fixes with minimal human input.}
+       % \resumeItem{Created a demo video for the Cloud AI Agents Engineering all-teams meeting and collaborated with teams such as GDM and YouTube, driving org-wide visibility and cross-team interest.}
+        % \resumeItem{Architected an end-to-end agentic dubbing pipeline that preserved timing, tone, and prosody of the source audio, by orchestrating stage-specific LLM agents in a non-linear, closed loop system bound by strict JSON contracts.}
+        % \resumeItem{Hardened the pipeline against an unstable preview TTS model, allowing full-length runs to complete unattended rather than stalling on transient failures, by classifying error types and designing a robust retry system.}
+        % \resumeItem{Designed a self-correcting eval loop capable of correcting upstream errors that improved pacing accuracy to produce dubs within $0.1s$ of the source duration, by pairing a multimodel Gemini "autorater" agent with a prompt-based "director" agent that drives targeted fixes, reducing human-in-the-loop effort.}
+        % \resumeItem{Created a demo video for the Cloud AI Agents Engineering all-teams meeting, presented internship achievements and takeaways, and collaborated with teams such as GDM and YouTube, driving org-wide visibility and cross-team interest.}
         % \resumeItem{Enabled natural language fine-tuning, creating a more flexible and portable alternative to the previous rigid cascaded production pipeline.}
-        \resumeItem{Created a demo video for the Cloud AI Agents Engineering all-teams meeting, presented internship achievements and takeaways to $10+$ engineers, and collaborated with teams such as GDM and YouTube, driving org-wide visibility and cross-team interest.}
+        % \resumeItem{Built a Gemini-TTS speech synthesis agent, capable of recovering $84\%$ of failures and fitting audio to target timing, by implementing best-of-N selection with a Gemini judge, dynamic per-speaker voice options, retry-with-backoff, and atempo time stretching.}
         % \resumeItem{Implemented a 'best-of-n' per-segment speech synthesis method, enhancing the dubbed audio quality [add eval data from veronica maybe?]}
         % implemented voice cloning [wip], time matchin (lip sync) [wip]. 
         % something about prompt engineering (add this to first bullet maybe?)
@@ -155,7 +162,7 @@
       {Head Teaching Assistant}{Aug. 2024 -- Present}
       {College of Computing, Georgia Institute of Technology}{Atlanta, GA}
       \resumeItemListStart
-        \resumeItem{Led a team of 30+ TAs supporting 600+ students in Honors Discrete Mathematics.}
+        \resumeItem{Led a team of 30+ TAs supporting 600+ students in (Honors) Discrete Mathematics.}
         \resumeItem{Coordinated grading and feedback processes to ensure consistent evaluation across assignments and exams.}
         \resumeItem{Partnered with professors to refine curriculum and streamline assessment workflows.}
       \resumeItemListEnd
@@ -254,8 +261,8 @@
 \section{Skills and Other}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, React, Node.js, SQL} \\
-     \textbf{Relevant Knowledge}{: Git, Tensorflow, Pandas, Pytorch, Numpy, OpenCV, NLP, GAN, Agile, Android Studio, FastAPI, Streamlit, Unity, Intel Developer Cloud, PID Control, Docker, Machine Learning, Agentic AI} \\
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Relevant Knowledge}{: Git, Tensorflow, Pandas, Pytorch, Numpy, OpenCV, NLP, GAN, Agile, Node.js, React, Android Studio, FastAPI, Streamlit, Unity, Intel Developer Cloud, PID Control, Docker, Machine Learning, Agentic AI} \\
      % \textbf{Relevant Coursework}{: Object Oriented Programming, Data Structures and Algorithms, Systems and Networks, Intro to AI, Objects and Design, Design and Analysis Algorithms, Linear Algebra, Database Systems, Computer Networking}\\
      % lol howdy
      \textbf{Clubs and Societies}{: Big Data Big Impact, Kappa Alpha Theta, Running Wreck, GT International Ambassadors}}}
